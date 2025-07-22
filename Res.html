@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<h lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI for Midnight - Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)), url('https://images.unsplash.com/photo-1605310945074-30aa0f4e361b?auto=format&fit=crop&w=2100&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      background: rgba(0, 0, 0, 0.8);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav h1 {
+      font-family: 'Creepster', cursive;
+      color: #ff6347;
+      font-size: 2.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #f8f8f8;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ff6347;
+    }
+
+    header {
+      padding: 4rem 2rem 2rem;
+      text-align: center;
+    }
+
+    header h2 {
+      font-size: 3rem;
+      font-family: 'Creepster', cursive;
+      color: #ff6347;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 3rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .project-card {
+      background: #1b1b1b;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 99, 71, 0.3);
+    }
+
+    .project-card h3 {
+      color: #ff6347;
+      font-family: 'Creepster', cursive;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card p {
+      color: #ddd;
+      font-size: 1rem;
+    }
+
+    .project-card a {
+      color: #ff6347;
+      text-decoration: underline;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+
+    footer {
+      background-color: #111;
+      padding: 2rem;
+      text-align: center;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #ff6347;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>AI for Midnight</h1>
+    <ul>
+        <li><a href="midnight.html">Home</a></li>
+      <li><a href="models.html">AI Models</a></li>
+      <li><a href="#">Projects links</a></li>
+      <li><a href="research.html">Research and Publications</a></li>
+      <li><a href="aboutus.html">About us</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h2>Project Repository</h2>
+    <p>Explore our chillingly innovative projects — from spectral simulations to haunted neural networks, all lurking below the surface.</p>
+  </header>
+
+  <section class="project-grid">
+    <div class="project-card">
+      <h3>ShadowNet</h3>
+      <p>AI model that detects spectral anomalies in dark visual data. Great for eerie detection use cases.</p>
+      <a href="#">View Repository</a>
+    </div>
+    <div class="project-card">
+      <h3>GhostScript</h3>
+      <p>A script-based chatbot that mimics haunted personality traits and horror-style conversation patterns.</p>
+      <a href="#">View Repository</a>
+    </div>
+    <div class="project-card">
+      <h3>PhantomVision</h3>
+      <p>Computer vision project that simulates ghostly appearances using edge detection and generative models.</p>
+      <a href="#">View Repository</a>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>Contact us: <a href="mailto:contact@aiformidnight.com">contact@aiformidnight.com</a></p>
+    <p>Created with dark energy by the AI for Midnight team 🦇</p>
+  </footer>
+</body>
+</h

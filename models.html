@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Models | AI for Midnight</title>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95)), url('https://images.unsplash.com/photo-1605310945074-30aa0f4e361b?auto=format&fit=crop&w=2100&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      overflow-x: hidden;
+      position: relative;
+      background-image: url("spooky_halloween_2-wallpaper-1920x1080.jpg");
+    }
+
+    .lightning {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      mix-blend-mode: overlay;
+      pointer-events: none;
+      animation: flash 6s infinite;
+      z-index: 0;
+    }
+
+    @keyframes flash {
+      0%, 100% { opacity: 0; }
+      10% { opacity: 0.8; }
+      12% { opacity: 0; }
+      60% { opacity: 0.5; }
+      62% { opacity: 0; }
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      background: rgba(0, 0, 0, 0.8);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav h1 {
+      font-family: 'Creepster', cursive;
+      color: #ff6347;
+      font-size: 2.5rem;
+      animation: flicker 3s infinite;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #f8f8f8;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ff6347;
+    }
+
+    main {
+      padding: 4rem 2rem;
+      background-color: rgba(0, 0, 0, 0.85);
+    }
+
+    h2 {
+      font-family: 'Creepster', cursive;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #ff6347;
+      animation: fadeInDown 1.5s ease-out;
+    }
+
+    .model-box {
+      max-width: 900px;
+      margin: 2rem auto;
+      background-color: #312c2c;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 99, 71, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .model-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 30px rgba(255, 99, 71, 0.6);
+    }
+
+    .model-box h3 {
+      font-size: 1.8rem;
+      color: #ff7b5c;
+      margin-bottom: 1rem;
+    }
+
+    .model-box p {
+      font-size: 1.1rem;
+      color: #ddd;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #111;
+      padding: 2rem;
+      text-align: center;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #ff6347;
+      text-decoration: none;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes flicker {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+      20%, 24%, 55% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="lightning"></div>
+
+  <nav>
+    <h1>AI for Midnight</h1>
+    <ul>
+      <li><a href="midnight.html">Home</a></li>
+      <li><a href="#">AI Models</a></li>
+      <li><a href="Res.html">Projects</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2 data-aos="fade-up">Our AI Models</h2>
+
+    <div class="model-box" data-aos="fade-up" data-aos-delay="100">
+      <h3>ShadowNet</h3>
+      <p>A spectral neural network that detects patterns in darkness, predicts anomalies, and simulates paranormal-like behaviors. Best suited for horror game environments and experimental low-light vision.</p>
+    </div>
+
+    <div class="model-box" data-aos="fade-up" data-aos-delay="200">
+      <h3>PhantomMind</h3>
+      <p>Designed to emulate cognitive patterns from horror fiction and folklore. It generates ghostly narratives and dialogues for interactive AI storytelling and eerie virtual assistants.</p>
+    </div>
+
+    <div class="model-box" data-aos="fade-up" data-aos-delay="300">
+      <h3>NightVision-X</h3>
+      <p>A computer vision model fine-tuned for nocturnal surveillance, cryptid detection, and anomaly recognition in poorly lit environments. It thrives in edge devices and real-time pipelines.</p>
+    </div>
+
+    <div class="model-box" data-aos="fade-up" data-aos-delay="400">
+      <h3>SpectralGAN</h3>
+      <p>Generates horror-themed synthetic datasets using generative adversarial networks. Trained on distorted imagery and urban legends to produce unique training material for niche AI projects.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Contact us: <a href="mailto:contact@aiformidnight.com">contact@aiformidnight.com</a></p>
+    <p>Created with dark energy by the AI for Midnight team 🪷</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>
