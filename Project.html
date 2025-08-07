@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Earthquake Signal Detector</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f4f6fb;
+    }
+
+    header {
+      background: #283593;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .panel {
+      background: #fff;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 20px 0 rgba(60, 72, 88, 0.11);
+      flex: 1 1 340px;
+      min-width: 320px;
+    }
+
+    .panel h2 {
+      margin-top: 0;
+      color: #283593;
+      font-size: 1.4rem;
+    }
+
+    #alerts {
+      border-left: 6px solid #e53935;
+      background: #fff3f3;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      font-weight: bold;
+      color: #c62828;
+    }
+
+    #liveChart, #map {
+      width: 100%;
+      height: 250px;
+      background: #e3e7ed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      color: #788099;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+    }
+
+    .settings label {
+      display: block;
+      margin: 0.6rem 0 0.2rem 0;
+      font-size: 1rem;
+    }
+
+    .settings input[type="range"] {
+      width: 100%;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Earthquake Signal Detector</h1>
+    <p>Use seismic data to detect precursors to earthquakes in real-time</p>
+  </header>
+
+  <div class="container">
+    <div class="panel">
+      <h2>Live Seismic Data</h2>
+      <div id="liveChart">[Live seismic data chart here]</div>
+    </div>
+
+    <div class="panel">
+      <h2>Alerts & Notifications</h2>
+      <div id="alerts">No active earthquakes detected.</div>
+      <ul>
+        <li>Recent Alert: None</li>
+        <li>Last Event: --</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Sensor Map</h2>
+      <div id="map">[Interactive map here]</div>
+    </div>
+
+    <div class="panel settings">
+      <h2>Settings</h2>
+      <label for="threshold">Detection Threshold:</label>
+      <input type="range" id="threshold" name="threshold" min="1" max="10" value="5">
+      <span id="threshVal">5</span>
+    </div>
+  </div>
+
+  <script>
+    // Simple JavaScript to show current range value
+    const thresh = document.getElementById('threshold');
+    const threshVal = document.getElementById('threshVal');
+    thresh.addEventListener('input', function() {
+      threshVal.textContent = this.value;
+    });
+  </script>
+</body>
+</html>
